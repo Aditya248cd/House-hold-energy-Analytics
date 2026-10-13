@@ -1,0 +1,27 @@
+# Secrets — NEVER commit these
+.env
+.streamlit/secrets.toml
+
+# Python virtual environment
+.venv/
+venv/
+
+# Large raw data and processed Parquet files
+data/household_power_consumption.txt
+data/cleaned_parquet/
+data/hourly_parquet/
+data/cleaned_csv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Spark / Hadoop temp files
+data/_SUCCESS
+*.snappy.parquet
+
+# IDE
+.idea/
+.vscode/
+*.egg-info/
